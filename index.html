@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Adapting the page for mobile devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Prohibition of phone number recognition -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Page title -->
+		<title>Заголовок страницы</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="">
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="">
+
+		<!-- Changing the color of the mobile browser panel -->
+		<meta name="msapplication-TileColor" content="#242424">
+		<meta name="theme-color" content="#242424">
+
+		<script>
+			// Device theme
+			const theme = localStorage.getItem('theme')
+				?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+
+			document.documentElement.setAttribute('data-theme', theme)
+		</script>
+
+		<!-- Connecting style files -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="css/fancybox.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/fonts.css">
+
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)">
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)">
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header class="no_line">
+					<div class="cont">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+							<img src="images/logo_white.svg" alt="">
+						</div>
+
+						<div class="theme">
+							<button class="btn light_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_theme_light"></use></svg>
+							</button>
+
+							<button class="btn dark_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_theme_dark"></use></svg>
+							</button>
+						</div>
+
+						<button class="mob_menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<nav class="menu">
+							<div class="item">
+								<a href="/">Интерьеры</a>
+							</div>
+
+							<div class="item">
+								<a href="/">Мебель</a>
+							</div>
+
+							<div class="item">
+								<a href="/">Контакты</a>
+							</div>
+						</nav>
+					</div>
+				</header>
+
+
+				<section class="first_section block">
+					<div class="cont">
+						<div class="info">
+							<div class="title">10 лет  создаем идеальные интерьеры для вашей жизни</div>
+
+							<div class="desc">Репутация и доверие — отвечаем за каждый квадратный метр.</div>
+
+							<div class="messengers">
+								<div class="label">Обсудить проект</div>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_max"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg"></use></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- <picture class="image">
+						<source srcset="images/tmp/first_section_image.jpg 1x, images/tmp/first_section_image@2x.jpg 2x">
+
+						<img src="images/tmp/first_section_image.jpg" alt="" fetchpriority="high" class="cover">
+					</picture> -->
+
+					<div class="video">
+						<video fetchpriority="high" src="./video.mp4" muted playsinline autoplay loop></video>
+					</div>
+				</section>
+
+
+				<section class="projects block">
+					<div class="cont">
+						<div class="top">
+							<div class="block_head">
+								<div class="title size_s">Проекты</div>
+							</div>
+
+							<div class="links">
+								<div><a href="/">Интерьеры</a></div>
+
+								<div><a href="/">Мебель</a></div>
+							</div>
+						</div>
+
+						<div class="grid_row">
+							<a href="/" class="item">
+								<picture class="thumb">
+									<source srcset="images/tmp/project_thumb1.jpg 1x, images/tmp/project_thumb1@2x.jpg 2x">
+
+									<img src="images/tmp/project_thumb1.jpg" alt="" loading="lazy" class="cover">
+								</picture>
+
+								<div class="area">110м²</div>
+
+								<div class="info">
+									<div class="city">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_city"></use></svg>
+
+										<span>Москва</span>
+									</div>
+
+									<div class="name">
+										<span>Мичуринский<br> Парк</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor_big"></use></svg>
+									</div>
+								</div>
+							</a>
+
+							<a href="/" class="item">
+								<picture class="thumb">
+									<source srcset="images/tmp/project_thumb2.jpg 1x, images/tmp/project_thumb2@2x.jpg 2x">
+
+									<img src="images/tmp/project_thumb2.jpg" alt="" loading="lazy" class="cover">
+								</picture>
+
+								<div class="area">110м²</div>
+
+								<div class="info">
+									<div class="city">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_city"></use></svg>
+
+										<span>Москва</span>
+									</div>
+
+									<div class="name">
+										<span>Мичуринский<br> Парк</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor_big"></use></svg>
+									</div>
+								</div>
+							</a>
+
+							<a href="/" class="item">
+								<picture class="thumb">
+									<source srcset="images/tmp/project_thumb3.jpg 1x, images/tmp/project_thumb3@2x.jpg 2x">
+
+									<img src="images/tmp/project_thumb3.jpg" alt="" loading="lazy" class="cover">
+								</picture>
+
+								<div class="area">110м²</div>
+
+								<div class="info">
+									<div class="city">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_city"></use></svg>
+
+										<span>Москва</span>
+									</div>
+
+									<div class="name">
+										<span>Мичуринский<br> Парк</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor_big"></use></svg>
+									</div>
+								</div>
+							</a>
+
+							<a href="/" class="item">
+								<picture class="thumb">
+									<source srcset="images/tmp/project_thumb4.jpg 1x, images/tmp/project_thumb4@2x.jpg 2x">
+
+									<img src="images/tmp/project_thumb4.jpg" alt="" loading="lazy" class="cover">
+								</picture>
+
+								<div class="area">110м²</div>
+
+								<div class="info">
+									<div class="city">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_city"></use></svg>
+
+										<span>Москва</span>
+									</div>
+
+									<div class="name">
+										<span>Мичуринский<br> Парк</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor_big"></use></svg>
+									</div>
+								</div>
+							</a>
+
+							<a href="/" class="item">
+								<picture class="thumb">
+									<source srcset="images/tmp/project_thumb5.jpg 1x, images/tmp/project_thumb5@2x.jpg 2x">
+
+									<img src="images/tmp/project_thumb5.jpg" alt="" loading="lazy" class="cover">
+								</picture>
+
+								<div class="area">110м²</div>
+
+								<div class="info">
+									<div class="city">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_city"></use></svg>
+
+										<span>Москва</span>
+									</div>
+
+									<div class="name">
+										<span>Мичуринский<br> Парк</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor_big"></use></svg>
+									</div>
+								</div>
+							</a>
+
+							<a href="/" class="item">
+								<picture class="thumb">
+									<source srcset="images/tmp/project_thumb6.jpg 1x, images/tmp/project_thumb6@2x.jpg 2x">
+
+									<img src="images/tmp/project_thumb6.jpg" alt="" loading="lazy" class="cover">
+								</picture>
+
+								<div class="area">110м²</div>
+
+								<div class="info">
+									<div class="city">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_city"></use></svg>
+
+										<span>Москва</span>
+									</div>
+
+									<div class="name">
+										<span>Мичуринский<br> Парк</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor_big"></use></svg>
+									</div>
+								</div>
+							</a>
+
+							<a href="/" class="item">
+								<picture class="thumb">
+									<source srcset="images/tmp/project_thumb7.jpg 1x, images/tmp/project_thumb7@2x.jpg 2x">
+
+									<img src="images/tmp/project_thumb7.jpg" alt="" loading="lazy" class="cover">
+								</picture>
+
+								<div class="area">110м²</div>
+
+								<div class="info">
+									<div class="city">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_city"></use></svg>
+
+										<span>Москва</span>
+									</div>
+
+									<div class="name">
+										<span>Мичуринский<br> Парк</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor_big"></use></svg>
+									</div>
+								</div>
+							</a>
+
+							<a href="/" class="item">
+								<picture class="thumb">
+									<source srcset="images/tmp/project_thumb8.jpg 1x, images/tmp/project_thumb8@2x.jpg 2x">
+
+									<img src="images/tmp/project_thumb8.jpg" alt="" loading="lazy" class="cover">
+								</picture>
+
+								<div class="area">110м²</div>
+
+								<div class="info">
+									<div class="city">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_city"></use></svg>
+
+										<span>Москва</span>
+									</div>
+
+									<div class="name">
+										<span>Мичуринский<br> Парк</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor_big"></use></svg>
+									</div>
+								</div>
+							</a>
+
+							<a href="/" class="item">
+								<picture class="thumb">
+									<source srcset="images/tmp/project_thumb9.jpg 1x, images/tmp/project_thumb9@2x.jpg 2x">
+
+									<img src="images/tmp/project_thumb9.jpg" alt="" loading="lazy" class="cover">
+								</picture>
+
+								<div class="area">110м²</div>
+
+								<div class="info">
+									<div class="city">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_city"></use></svg>
+
+										<span>Москва</span>
+									</div>
+
+									<div class="name">
+										<span>Мичуринский<br> Парк</span>
+
+										<svg class="arr"><use xlink:href="images/sprite.svg#ic_arr_hor_big"></use></svg>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="pagination">
+							<a class="active">1</a>
+
+							<a href="/">2</a>
+
+							<a href="/">3</a>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="work_process block">
+					<div class="cont">
+						<div class="top">
+							<div class="block_head">
+								<div class="title size_s">Эстетика работы</div>
+
+								<div class="desc">В процессе – тоже красота. Наша команда делится эстетичными кадрами.</div>
+							</div>
+
+							<div class="swiper-controls">
+								<button class="swiper-button-prev">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_slider_arr"></use></svg>
+								</button>
+
+								<button class="swiper-button-next">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_slider_arr"></use></svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="./video.mp4" class="item fancy_img">
+										<picture class="thumb">
+											<source srcset="images/tmp/work_process_thumb1.jpg 1x, images/tmp/work_process_thumb1@2x.jpg 2x">
+
+											<img src="images/tmp/work_process_thumb1.jpg" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+
+											<span>Смотреть видео</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="./video.mp4" class="item fancy_img">
+										<picture class="thumb">
+											<source srcset="images/tmp/work_process_thumb2.jpg 1x, images/tmp/work_process_thumb2@2x.jpg 2x">
+
+											<img src="images/tmp/work_process_thumb2.jpg" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+
+											<span>Смотреть видео</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="./video.mp4" class="item fancy_img">
+										<picture class="thumb">
+											<source srcset="images/tmp/work_process_thumb3.jpg 1x, images/tmp/work_process_thumb3@2x.jpg 2x">
+
+											<img src="images/tmp/work_process_thumb3.jpg" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+
+											<span>Смотреть видео</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="./video.mp4" class="item fancy_img">
+										<picture class="thumb">
+											<source srcset="images/tmp/work_process_thumb1.jpg 1x, images/tmp/work_process_thumb1@2x.jpg 2x">
+
+											<img src="images/tmp/work_process_thumb1.jpg" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+
+											<span>Смотреть видео</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="./video.mp4" class="item fancy_img">
+										<picture class="thumb">
+											<source srcset="images/tmp/work_process_thumb2.jpg 1x, images/tmp/work_process_thumb2@2x.jpg 2x">
+
+											<img src="images/tmp/work_process_thumb2.jpg" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+
+											<span>Смотреть видео</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="./video.mp4" class="item fancy_img">
+										<picture class="thumb">
+											<source srcset="images/tmp/work_process_thumb3.jpg 1x, images/tmp/work_process_thumb3@2x.jpg 2x">
+
+											<img src="images/tmp/work_process_thumb3.jpg" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+
+											<span>Смотреть видео</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="./video.mp4" class="item fancy_img">
+										<picture class="thumb">
+											<source srcset="images/tmp/work_process_thumb1.jpg 1x, images/tmp/work_process_thumb1@2x.jpg 2x">
+
+											<img src="images/tmp/work_process_thumb1.jpg" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+
+											<span>Смотреть видео</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="./video.mp4" class="item fancy_img">
+										<picture class="thumb">
+											<source srcset="images/tmp/work_process_thumb2.jpg 1x, images/tmp/work_process_thumb2@2x.jpg 2x">
+
+											<img src="images/tmp/work_process_thumb2.jpg" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+
+											<span>Смотреть видео</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="swiper-slide">
+									<a href="./video.mp4" class="item fancy_img">
+										<picture class="thumb">
+											<source srcset="images/tmp/work_process_thumb3.jpg 1x, images/tmp/work_process_thumb3@2x.jpg 2x">
+
+											<img src="images/tmp/work_process_thumb3.jpg" alt="" loading="lazy" class="cover">
+										</picture>
+
+										<div class="btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_video_play"></use></svg>
+
+											<span>Смотреть видео</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="about_info block">
+					<div class="cont">
+						<div class="top">
+							<div class="grid_row">
+								<div class="block_head">
+									<div class="title">Репартмент —</div>
+
+									<div class="desc"><b>Бюро дизайна и ремонта<br> недвижимости</b></div>
+								</div>
+
+								<div class="stats">
+									<div class="grid_row">
+										<div class="item">
+											<div class="val">10</div>
+
+											<div class="desc">Лет опыта в создании уникальных интерьеров</div>
+										</div>
+
+										<div class="item">
+											<div class="val">5.0</div>
+
+											<div class="desc">Оценка наших клиентов</div>
+										</div>
+
+										<div class="item">
+											<div class="val">219</div>
+
+											<div class="desc">Частных резиденций и квартир реализовано</div>
+										</div>
+
+										<div class="item">
+											<div class="val">98%</div>
+
+											<div class="desc">Клиентов выбирают нас по<br> рекомендации</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="video">
+							<video src="./video.mp4" muted playsinline loop></video>
+						</div>
+
+
+						<div class="advantages">
+							<button class="spoler_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_arr_hor"></use></svg>
+
+								<span>Больше о нас</span>
+								<span>Свернуть</span>
+
+								<span class="line"></span>
+							</button>
+
+							<div class="hidden">
+								<div class="grid_row">
+									<div class="item">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_advantage1"></use></svg>
+
+										<div class="name">Команда, собранная под ваш проект</div>
+
+										<div class="desc">Каждый мастер — специалист с опытом на сложных объектах. Работаем по закрытым стандартам качества и используем лучший инструмент в индустрии. Поэтому гарантия — 5 лет.</div>
+									</div>
+
+									<div class="item">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_advantage2"></use></svg>
+
+										<div class="name">Материалы и техника без наценок</div>
+
+										<div class="desc">Свой склад-магазин и прямые контракты с производителями. Материалы и техника — без посредников и розничных наценок.</div>
+									</div>
+
+									<div class="item">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_advantage3"></use></svg>
+
+										<div class="name">Производство мебели</div>
+
+										<div class="desc">Собственная мебельная фабрика 20 000 м², оборудованная высокотехнологичными станками. Премиальное качество каждого изделия.</div>
+									</div>
+
+									<div class="item">
+										<svg class="icon"><use xlink:href="images/sprite.svg#ic_advantage4"></use></svg>
+
+										<div class="name">Прозрачность на всех этапах</div>
+
+										<div class="desc">Честно и открыто ведем проекты. Каждый этап, каждая позиция — в договоре и в личном кабинете проекта.</div>
+									</div>
+								</div>
+
+								<div class="text_block">
+									<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque  faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi  pretium tellus duis convallis. Tempus leo eu aenean sed diam urna  tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.  Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit  semper vel class aptent taciti sociosqu. Ad litora torquent per conubia  nostra inceptos himenaeos.</p>
+
+									<h2>h2</h2>
+
+									<p>Lorem ipsum dolor sit amet consectetur  adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem  placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu  aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus  bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc  posuere. Ut hendrerit semper vel class aptent taciti sociosqu.</p>
+
+									<h3>h3</h3>
+
+									<p>Lorem ipsum dolor sit amet consectetur  adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem  placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu  aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus  bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc  posuere. Ut hendrerit semper vel class aptent taciti sociosqu.</p>
+
+									<picture>
+										<source srcset="images/tmp/text_image.jpg 1x, images/tmp/text_image@2x.jpg 2x">
+
+										<img src="images/tmp/text_image.jpg" alt="" loading="lazy">
+									</picture>
+
+									<h4>h4</h4>
+
+									<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque  faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi  pretium tellus duis convallis. Tempus leo eu aenean sed diam urna  tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.  Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit  semper vel class aptent taciti sociosqu. Ad litora torquent per conubia  nostra inceptos himenaeos.</p>
+
+									<ul>
+										<li>item name #1</li>
+										<li>item name #2</li>
+										<li>item name #3</li>
+									</ul>
+
+									<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque  faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi  pretium tellus duis convallis. Tempus leo eu aenean sed diam urna  tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.  Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit  semper vel class aptent taciti sociosqu. Ad litora torquent per conubia  nostra inceptos himenaeos.</p>
+
+									<ol>
+										<li>item name #1</li>
+										<li>item name #2</li>
+										<li>item name #3</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="cont">
+					<div class="grid_row">
+						<div class="info">
+							<div class="logo">
+								<img src="images/logo_white.svg" alt="">
+							</div>
+
+							<div class="copyright">&copy; 2014‐2026 «РЕПАРТМЕНТ»</div>
+
+							<div class="socials">
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_max"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_tg"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_vk"></use></svg>
+								</a>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_instagram"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="contacts">
+							<div class="phone">
+								<a href="tel:+7 (495) 476-65-65">+7 (495) 476-65-65</a>
+							</div>
+
+							<div class="address">г. Москва, Бауманская улица, 6с2</div>
+
+							<div class="email">
+								<a href="mailto:info@repartment.ru ">info@repartment.ru </a>
+							</div>
+						</div>
+
+						<div class="links">
+							<div><a href="/">Интерьеры</a></div>
+
+							<div><a href="/">Мебель</a></div>
+
+							<div><a href="/">Контакты</a></div>
+						</div>
+					</div>
+
+					<div class="devider"></div>
+
+					<div class="grid_row">
+						<div class="links">
+							<div><a href="/">Обработка персональных данных</a></div>
+
+							<div><a href="/">Пользовательское соглашение</a></div>
+						</div>
+
+						<div class="text">Информация на данном сайте носит ознакомительный характер и не является публичной офертой, определяемой положениями ст. 437 Гражданского кодекса РФ. Информация о технологиях, характеристиках, стоимость и сроки оказания услуг, товаров могут быть изменены компанией без уведомления. Точные условия, объём работ и итоговая стоимость согласовываются в индивидуальном договоре. Актуальную информацию уточняйте по телефону или при личной встрече.</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<!-- Connecting javascript files -->
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script src="js/fancybox.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

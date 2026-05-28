@@ -1,0 +1,134 @@
+@media print,
+(max-width: 1023px)
+{
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        .menu
+        {
+            gap: var(--block_padding);
+        }
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        .info
+        {
+            .messengers
+            {
+                margin-top: var(--inner_gap_s);
+            }
+        }
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects
+    {
+        .grid_row
+        {
+            --items_per_line: 2;
+        }
+    }
+
+
+
+    /*------------------
+        Work process
+    ------------------*/
+    .work_process
+    {
+        .swiper
+        {
+            &:not(.swiper-initialized)
+            {
+                .swiper-wrapper
+                {
+                    gap: var(--spaceBetween-768);
+                }
+
+
+                .swiper-slide
+                {
+                    width: calc(100% / var(--slidesPerView-768) - var(--spaceBetween-768));
+                }
+            }
+        }
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        .grid_row
+        {
+            --items_per_line: 1;
+        }
+
+
+        .stats
+        {
+            --width_multiplier: 1;
+        }
+    }
+
+
+
+    /*---------------
+        Interiors
+    ---------------*/
+    .interiors
+    {
+        .features
+        {
+            .item
+            {
+                padding-inline: var(--inner_gap_l);
+            }
+        }
+
+
+        .gallery
+        {
+            .grid_row
+            {
+                --items_per_line: 2;
+            }
+
+
+            .item
+            {
+                &.l_w ~ &.l_w
+                {
+                    order: 2;
+                }
+            }
+        }
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        .socials
+        {
+            gap: var(--inner_gap_s);
+        }
+    }
+}

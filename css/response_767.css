@@ -1,0 +1,376 @@
+@media (max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --block_head_offset: 30px;
+        --block_padding_l: 40px;
+        --block_padding: 30px;
+        --block_padding_s: 20px;
+        --outside_gap: 30px;
+    }
+
+
+    .swiper-controls
+    {
+        gap: var(--inner_gap);
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        --swiper-navigation-size: 30px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        .logo
+        {
+            img
+            {
+                width: 23px;
+                height: 30px;
+            }
+        }
+
+
+        .theme
+        {
+            gap: var(--inner_gap);
+
+            margin-left: var(--block_padding_l);
+        }
+
+
+        .mob_menu_btn
+        {
+            display: flex;
+        }
+
+
+        .menu
+        {
+            display: none;
+
+            width: 100%;
+            margin-top: var(--inner_gap_l);
+
+            text-align: right;
+
+
+            & > * + *
+            {
+                margin-top: var(--inner_gap_l);
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        .cont
+        {
+            height: calc(100dvh - 90px);
+            min-height: 480px;
+        }
+
+
+        .info
+        {
+            .messengers
+            {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    /*--------------
+        Projects
+    --------------*/
+    .projects
+    {
+        .block_head
+        {
+            width: 100%;
+        }
+
+
+        .grid_row
+        {
+            --items_per_line: 1;
+        }
+    }
+
+
+
+    /*------------------
+        Work process
+    ------------------*/
+    .work_process
+    {
+        .top
+        {
+            align-content: flex-end;
+            align-items: flex-end;
+        }
+
+
+        .swiper
+        {
+            &:not(.swiper-initialized)
+            {
+                .swiper-wrapper
+                {
+                    gap: var(--spaceBetween-0);
+                }
+
+
+                .swiper-slide
+                {
+                    width: calc(100% / var(--slidesPerView-0) - var(--spaceBetween-0));
+                }
+            }
+        }
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding-top: var(--inner_gap_s);
+
+
+        .stats
+        {
+            .grid_row
+            {
+                --gap_x: var(--zero_px);
+                --gap_y: var(--block_padding_l);
+                --items_per_line: 1;
+            }
+
+
+            .item
+            {
+                gap: var(--inner_gap);
+            }
+        }
+
+
+        .advantages
+        {
+            .grid_row
+            {
+                --items_per_line: 1;
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        .top
+        {
+            .tabs
+            {
+                gap: var(--inner_gap_l);
+            }
+
+
+            .messengers
+            {
+                width: 100%;
+            }
+        }
+
+
+        .grid_row
+        {
+            --items_per_line: 1;
+        }
+
+
+        .map
+        {
+            margin-inline: calc(var(--cont_padding) * -1);
+        }
+
+
+        .download
+        {
+            a
+            {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    /*---------------
+        Interiors
+    ---------------*/
+    .interiors
+    {
+        .top
+        {
+            .desc,
+            .messengers
+            {
+                width: 100%;
+            }
+        }
+
+
+        .image
+        {
+            margin-inline: calc(var(--cont_padding) * -1);
+        }
+
+
+        .features
+        {
+            .grid_row
+            {
+                --gap_x: var(--zero_px);
+                --gap_y: var(--inner_gap);
+            }
+
+
+            .item
+            {
+                padding: 0;
+
+                background: none;
+
+
+                .label
+                {
+                    display: none;
+                }
+            }
+
+
+            .item + .item
+            {
+                text-align: center;
+
+                border-left: 1px solid var(--grey_color);
+            }
+        }
+
+
+        .description
+        {
+            .text_block
+            {
+                height: 13lh;
+            }
+        }
+
+
+        .gallery
+        {
+            .grid_row
+            {
+                --items_per_line: 1;
+            }
+
+
+            .item
+            {
+                &.l_w
+                {
+                    --width_multiplier: 1;
+                }
+            }
+        }
+
+
+        .prev_next
+        {
+            a
+            {
+                width: calc(50% - var(--inner_gap_l) / 2);
+                min-width: 0;
+                padding-inline: var(--inner_gap);
+
+
+                span
+                {
+                    display: none;
+                }
+
+
+                span + span
+                {
+                    display: block;
+                }
+            }
+        }
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        .grid_row
+        {
+            --items_per_line: 1;
+            --gap_x: var(--block_padding);
+            --gap_y: var(--block_padding);
+        }
+
+
+        .info
+        {
+            gap: var(--inner_gap_l);
+
+            margin-bottom: var(--inner_gap_l);
+            padding-bottom: var(--inner_gap_l);
+
+            border-bottom: 1px solid #505050;
+        }
+
+
+        .contacts
+        {
+            gap: var(--inner_gap);
+
+            margin-bottom: var(--inner_gap_l);
+            padding-bottom: var(--inner_gap_l);
+
+            border-bottom: 1px solid #505050;
+        }
+
+
+        .links
+        {
+            gap: var(--inner_gap);
+        }
+    }
+}
