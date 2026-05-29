@@ -181,6 +181,12 @@
                 --items_per_line: 1;
             }
         }
+
+
+        .video
+        {
+            margin-inline: calc(var(--cont_padding) * -1);
+        }
     }
 
 
