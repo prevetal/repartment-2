@@ -82,7 +82,7 @@
     {
         .cont
         {
-            height: calc(100dvh - 90px);
+            height: calc(100svh - 90px);
             min-height: 480px;
         }
 
